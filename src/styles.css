@@ -1,0 +1,675 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.dark-mode  {
+    --bg-primary: #1a202c; /* Dark background color */
+    --text-primary: #ffffff; /* Light text color */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.t-btn {
+    opacity: 0;
+    position: absolute;
+}
+
+.t-btn-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #00e5ff;
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.t-btn-label .t-b {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.t-btn:checked+.t-btn-label .t-b {
+    transform: translateX(24px);
+}
+
+#hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#navItem.hidden,
+#darktheme.hidden {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    #navItem {
+        display: flex !important;
+    }
+    #darktheme {
+        display: flex !important;
+    }
+}
+
+.outer {
+    animation: rotate 50s infinite linear;
+}
+
+.about-outer {
+    animation: rotate 30s infinite linear;
+}
+
+.outerCircle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0.5px solid #00e5ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-outerCircle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middleCircle {
+    width: 75%;
+    height: 70%;
+    border: 0.5px solid #00e5ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerCircle {
+    width: 60%;
+    height: 60%;
+    border: 0.5px solid #00e5ff;
+    position: relative;
+    border-radius: 50%;
+    animation: antirotate 25s infinite linear;
+}
+
+.hp {
+    padding-bottom: 2rem;
+}
+
+.ap {
+    padding-bottom: 13rem
+}
+
+nav img {
+    width: 80px;
+    height: 60px;
+} 
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+.html {
+    position: absolute;
+    top: 2%;
+    animation: antirotateElement 50s infinite linear;
+}
+
+.css {
+    position: absolute;
+    top: 0;
+    left: 72%;
+    animation: antirotateElement 50s infinite linear;
+}
+
+.js {
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    animation: antirotateElement 50s infinite linear;
+}
+
+.react img {
+    width: 45px;
+    height: 45px;
+}
+
+.about-react img {
+    width: 45px;
+    height: 45px;
+}
+
+.react {
+    position: absolute;
+    top: 68%;
+    left: 70%;
+    animation: antirotateElement 50s infinite linear;
+}
+
+.about-react {
+    position: absolute;
+    top: -8%;
+    left: 45%;
+    animation: rotateElement 30s infinite linear;
+}
+
+.tailwind {
+    position: absolute;
+    top: -8%;
+    left: 43%;
+    animation: rotateElement 50s infinite linear;
+}
+
+.node {
+    position: absolute;
+    top: 70%;
+    left: 1%;
+    animation: rotateElement 50s infinite linear;
+}
+
+.about-node {
+    position: absolute;
+    top: 45%;
+    right: -6%;
+    animation: rotateElement 30s infinite linear;
+}
+
+.mongodb {
+    position: absolute;
+    top: 94%;
+    left: 43%;
+    animation: rotateElement 50s infinite linear;
+}
+
+.about-mongodb img {
+    width: 50px;
+    height: 50px;
+}
+
+.about-mongodb {
+    position: absolute;
+    top: 85%;
+    left: 43%;
+    animation: rotateElement 30s infinite linear;
+}
+
+.express {
+    position: absolute;
+    top: 45%;
+    left: -5%;
+    animation: rotateElement 30s infinite linear;
+}
+
+.redux {
+    position: absolute;
+    top: 70%;
+    left: 84%;
+    animation: rotateElement 50s infinite linear;
+}
+
+.firebase {
+    position: absolute;
+    top: 20%;
+    left: 89%;
+    animation: rotateElement 50s infinite linear;
+}
+
+.java {
+    position: absolute;
+    top: 20%;
+    left: -1%;
+    animation: rotateElement 50s infinite linear;
+}
+
+.man {
+    position: absolute;
+    left: -5%;
+    width: 30rem;
+    height: 28rem;
+    animation: mover 1s infinite alternate;
+}
+
+.glow {
+    animation: textGlow 2s infinite alternate
+}
+
+.fab:hover {
+    animation: borderGlow 2s infinite alternate;
+}
+
+.fa:hover {
+    animation: borderGlow 2s infinite alternate;
+}
+
+.outerCircle:hover {
+    animation: borderGlow 2s infinite alternate;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-top: 40px;
+}
+
+.skills {
+    flex: 1;
+    padding-right: 20px;
+    max-width: 600px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill p {
+    margin: 0 0 5px;
+    font-size: 1em;
+}
+
+.percentage {
+    display: none;
+}
+
+.progress-bar {
+    background-color: #2e3039;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.progress {
+    background-color: #a200ff;
+    height: 100%;
+    border-radius: 20px;
+    width: var(--progress-width);
+}
+
+.progress-bar:hover .progress {
+    animation: grow 1s forwards;
+}
+
+.skill:hover .percentage {
+    display: block;
+}
+
+.circular-skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.circular-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    height: 170px;
+}
+
+.circular-skill p {
+    margin-top: 10px;
+}
+
+.circle {
+    width: 136px;
+    height: 136px;
+    background: conic-gradient(#a200ff calc(var(--percentage) * 1%), #2e3039 calc(var(--percentage) * 1%));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 116px;
+    background-color: #1d1f27;
+    border-radius: 50%;
+    font-size: 1.2em;
+    color: #00d0ff;
+}
+
+.s-number {
+    position: relative;
+    color: #fff;
+    top: 5%;
+    left: 5%;
+    z-index: 10;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.s-number span {
+    font-size: 0.5em;
+    font-weight: 500;
+}
+
+.article-box {
+    transition: transform 1s;
+}
+
+.article-box:hover {
+    box-shadow: 0 0 20px #a200ff;
+    transform: translateY(-10px);
+}
+
+.project-img {
+    position: relative;
+    overflow: hidden;
+    transition: transform 1s;
+}
+
+.project-img img {
+    height:100%;
+}
+
+.layer {
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    background: linear-gradient(transparent, #a200ff 90%);
+}
+
+.layer-a {
+    height: 100%;
+    height: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.project-img:hover .layer {
+    opacity: 1;
+}
+
+.project-img:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.project-img:hover .layer-a {
+    height: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icon,
+.f-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.social-item,
+.f-item {
+    list-style: none;
+}
+
+.social-link {
+    font-size: 2rem;
+    color: black;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-link:hover {
+    transform: translateY(-10px);
+}
+
+.f-link {
+    font-size: 1.2rem;
+    color: black;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.f-link:hover {
+    opacity: 1;
+}
+
+.footer p {
+    color: #0f172a;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.stream {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+}
+
+.stream#stream1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+}
+
+.stream#stream2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+}
+
+.stream#stream3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+}
+
+.stream#stream4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: -1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+
+
+@keyframes grow {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--progress-width);
+        ;
+    }
+}
+
+
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateElement {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes antirotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes antirotateElement {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@keyframes borderGlow {
+    from {
+        box-shadow: 0 0 10px #a200ff, 0 0 20px #a200ff, 0 0 30px #a200ff, 0 0 40px #a200ff, 0 0 50px #a200ff, 0 0 60px #a200ff, 0 0 70px #a200ff;
+    }
+
+    to {
+        box-shadow: 0 0 20px #a200ff, 0 0 30px #a200ff, 0 0 40px #a200ff, 0 0 50px #a200ff, 0 0 60px #a200ff, 0 0 70px #a200ff, 0 0 80px #a200ff;
+    }
+}
+
+
+
+.design .logoCircle{
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+}
+.design :nth-child(1){
+    background:linear-gradient(90deg, transparent 50%,#d9fcfc 50%);
+    width: 34rem;
+}
+.design :nth-child(2){
+    width: 28rem;
+    background-image: url(./images/Akash\ kumar\ image2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .3rem solid #ffffff;
+    box-shadow: 0 0 2rem white,inset 0 0 1rem white ,0 0 2rem #a200ff, inset 0 0 1rem #a200ff,
+                0 0 4rem #a200ff,inset 0 0 1rem #a200ff;
+}
+
+@media (max-width:1300px ) {
+    .design{
+        display: none;
+    }
+}

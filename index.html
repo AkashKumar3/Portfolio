@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/input.css" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Akash's Portfolio</title>
+  </head>
+
+  <body class="dark">
+    <!-------------------nav bar -------------------------->
+    <header>
+      <nav
+        id="nav"
+        class="flex flex-col justify-start relative transition-all duration-300 items-start px-4 py-4 bg-sky text-black sm:static sm:h-min sm:justify-between sm:items-center sm:flex-row font-franklin font-bold  dark:bg-nav-blue dark:text-white">
+        <div class="flex items-center w-full justify-between sm:w-1/3">
+          <img src="./src/images/logo.png" class="w-24 cursor-pointer" alt="logo" />
+          <div class="sm:hidden">
+            <button id="hamburger" class="focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <ul
+          id="navItem"
+          class="hidden flex-col my-4 gap-4 justify-center sm:static sm:flex sm:w-1/3 sm:flex-row sm:my-0 font-franklin text-lg"
+        >
+          <li class="hover:text-glow transition-all duration-300">
+            <a href="#home">Home</a>
+          </li>
+          <li class="hover:text-glow transition-all duration-300">
+            <a href="#about">About</a>
+          </li>
+          <li class="hover:text-glow transition-all duration-300">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="hover:text-glow transition-all duration-300">
+            <a href="#services">Services</a>
+          </li>
+          <li class="hover:text-glow transition-all duration-300">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="hover:text-glow transition-all duration-300">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <div
+          id="darktheme"
+          class="hidden sm:flex gap-2 justify-center items-center sm:w-1/3">
+          <div>
+            <input id="t-btn" class="t-btn" type="checkbox" />
+            <label for="t-btn" class="t-btn-label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <span class="t-b"></span>
+            </label>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--------------------------------- Home Section ----------------------------------------->
+
+      <section
+        id="home"
+        class="flex flex-col sm:flex-row bg-sky sm:min-h-screen px-4 sm:px-12 text-black hp dark:bg-nav-blue dark:text-white"
+      >
+        <div class="py-16 xs:py-32 sm:my-auto">
+          <h2
+            class="text-xl xs:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-caudex"
+          >
+            Hello, It's Me
+          </h2>
+          <h1
+            class="text-3xl xs:text-4xl md:text-6xl lg:text-7xl xl:text-8xl glow font-besley font-bold text-glow"
+          >
+            Akash Kumar
+          </h1>
+          <p
+            class="text-sm xs:text-xl md:text-xl xl:text-2xl py-4 md:py-8 font-caudex"
+          >
+            Elevating Web Experiences as a Full Stack MERN Developer
+          </p>
+          <div class="flex gap-4 pb-4 md:pb-8">
+            <a
+              href="https://www.linkedin.com/in/akash-kumar-1119671a0/"
+              target="_blank"
+              class="fab fa-linkedin border-2 cursor-pointer text-glow border-glow p-2 rounded-full"
+            ></a>
+            <a
+              href="https://github.com/AkashKumar3"
+              target="_blank"
+              class="fab fa-github border-2 cursor-pointer text-glow border-glow p-2 rounded-full"
+            ></a>
+            <a
+              href="mailto:sanuverma@gmail.com"
+              target="_blank"
+              class="fa fa-envelope border-2 cursor-pointer text-glow border-glow p-2 rounded-full"
+            ></a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="fab fa-instagram border-2 cursor-pointer text-glow border-glow p-2 rounded-full"
+            ></a>
+          </div>
+          <button
+            class="border-2 py-1 px-2 xs:py-1 xs:px-2 md:py-2 md:px-6 rounded-full border-highlight font-bold transition-all duration-300 text-white bg-glow hover:text-black hover:bg-nav-sky dark:hover:bg-nav-blue dark:hover:text-glow"
+          >
+            Download Resume
+          </button>
+        </div>
+        <!-- <div class="m-auto relative">
+               
+                    <div class="design">
+                        <div class="logoCircle"></div>
+                        <div class="logoCircle"></div>
+                      </div>
+               
+            </div> -->
+
+        <div class="m-auto relative">
+          <div class="outer w-56 h-56 sm:w-73 sm:h-73">
+            <div class="outerCircle">
+              <div class="middleCircle">
+                <div class="innerCircle">
+                  <div class="html">
+                    <img src="./src/images/html.png" alt="html-img" />
+                  </div>
+                  <div class="css">
+                    <img src="./src/images/css.png" alt="css-img" />
+                  </div>
+                  <div class="js">
+                    <img src="./src/images/js.png" alt="js-img" />
+                  </div>
+                  <div class="react">
+                    <img src="./src/images/react.png" alt="react-img" />
+                  </div>
+                </div>
+              </div>
+              <div class="tailwind">
+                <img src="./src/images/tailwind.png" alt="tailwind-img" />
+              </div>
+              <div class="node">
+                <img src="./src/images/node.png" alt="node-img" />
+              </div>
+              <div class="mongodb">
+                <img src="./src/images/mongodb.png" alt="mongodb-img" />
+              </div>
+              <div class="redux">
+                <img src="./src/images/redux.png" alt="redux-img" />
+              </div>
+              <div class="firebase">
+                <img src="./src/images/firebase.png" alt="firebase-img" />
+              </div>
+              <div class="java">
+                <img src="./src/images/java.png" alt="java-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------------------------- About Section --------------------------->
+
+      <section
+        id="about"
+        class="flex flex-col-reverse gap-4 sm:flex-row bg-sky sm:min-h-screen px-4 sm:px-12 text-black pb-72 sm:pb-10  dark:bg-nav-blue dark:text-white"
+      >
+        <div class="m-auto relative w-full sm:w-[50%]">
+          <div
+            class="about-outer ml-[9%] w-56 h-56 sm:m-auto sm:mt-[10%] xl:mt-[-42%] xl:w-73 xl:h-73 xl:ml-[17%]"
+          ></div>
+          <img
+            class="man top-[25%] sm:top-[-20%] xl:top-[-350%]"
+            src="./src/images/man.png"
+            alt="man-meditating"
+          />
+        </div>
+
+        <div class="py-16 xs:py-32 w-full sm:w-[60%] my-auto">
+          <h1>
+            <span
+              class="text-5xl xs:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-glow font-playfair"
+              >About
+            </span>
+
+            <span
+              class="text-4xl xs:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-playfair"
+              >Me</span
+            >
+          </h1>
+          <p class="text-sm md:text-base lg:text-xl py-4 md:py-8 font-grotesk">
+            Hi, I'm Akash Kumar, a passionate and skilled MERN Stack Web
+            Developer with a keen eye for creating dynamic and responsive web
+            applications. With proficiency in MongoDB, Express.js, React, and
+            Node.js, I specialize in building seamless user experiences and
+            robust back-end solutions. My journey in web development has been
+            driven by a relentless curiosity and a desire to constantly evolve
+            with the latest technologies. I take pride in my ability to design
+            and implement efficient, scalable, and maintainable code. Whether
+            it's crafting a responsive navigation bar, developing complex
+            full-stack applications, or optimizing existing projects, I thrive
+            on solving challenges and delivering high-quality work. I am
+            committed to continuous learning and staying updated with industry
+            trends, ensuring that I bring the best practices to every project.
+            Let's connect and create something amazing together!
+          </p>
+          <a href="#about">
+            <button
+              class="border-2 py-1 px-2 xs:py-1 xs:px-2 md:py-2 md:px-6 rounded-full border-highlight font-bold transition-all duration-300 text-glow hover:text-sky hover:bg-glow"
+            >
+              Read More
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <!------------------------------- skills section ---------------------------------->
+
+      <section
+        id="skills"
+        class="gap-4 bg-sky sm:min-h-screen px-4 sm:px-16 text-black  dark:bg-nav-blue dark:text-white"
+      >
+        <h1
+          class="text-4xl xs:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-playfair text-center"
+        >
+          My
+          <span
+            class="text-5xl xs:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-glow font-playfair"
+            >Skills</span
+          >
+        </h1>
+        <div class="skills-container flex-col lg:flex-row">
+          <div class="skills">
+            <div class="bg-nav-sky p-6 my-14 rounded-lg  dark:bg-slate-800">
+              <div class="skill">
+                <div class="flex justify-between">
+                  <h1>Html</h1>
+                  <h1 class="text-glow">90%</h1>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="--progress-width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="flex justify-between">
+                  <h1>CSS</h1>
+                  <h1 class="text-glow">80%</h1>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="--progress-width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="flex justify-between">
+                  <h1>JavaScript</h1>
+                  <h1 class="text-glow">83%</h1>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="--progress-width: 83%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="flex justify-between">
+                  <h1>React Js.</h1>
+                  <h1 class="text-glow">85%</h1>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="--progress-width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="flex justify-between">
+                  <h1>tailwind</h1>
+                  <h1 class="text-glow">88%</h1>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="--progress-width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="flex justify-between">
+                  <h1>Redux</h1>
+                  <h1 class="text-glow">82%</h1>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="--progress-width: 82%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="flex justify-between">
+                  <h1>MongoDB</h1>
+                  <h1 class="text-glow">85%</h1>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="--progress-width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="flex justify-between">
+                  <h1>Node Js.</h1>
+                  <h1 class="text-glow">89%</h1>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="--progress-width: 89%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div class="flex justify-between">
+                  <h1>Java</h1>
+                  <h1 class="text-glow">80%</h1>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress" style="--progress-width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="circular-skills">
+            <div class="circular-skill">
+              <div class="circle" style="--percentage: 90">
+                <h2 class="s-number font-bona font-bold">90 <span>%</span></h2>
+              </div>
+              <p class="font-bona">Team Work</p>
+            </div>
+            <div class="circular-skill ml-28">
+              <div class="circle" style="--percentage: 85">
+                <h2 class="s-number font-bona font-bold">85 <span>%</span></h2>
+              </div>
+              <p class="font-bona">Creativity</p>
+            </div>
+            <div class="circular-skill">
+              <div class="circle" style="--percentage: 87">
+                <h2 class="s-number font-bona font-bold">87 <span>%</span></h2>
+              </div>
+              <p class="font-bona">Problem Solving</p>
+            </div>
+            <div class="circular-skill ml-28">
+              <div class="circle" style="--percentage: 80">
+                <h2 class="s-number font-bona font-bold">80 <span>%</span></h2>
+              </div>
+              <p class="font-bona">Communication</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------------------------------- Services Section ------------------------------------->
+
+      <section
+        id="services"
+        class="flex flex-col gap-4 sm:flex-row bg-sky sm:min-h-screen px-4 sm:px-16 text-black  dark:bg-nav-blue dark:text-white"
+      >
+        <div class="py-16 xs:py-32 w-full my-auto">
+          <h1
+            class="text-4xl xs:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-playfair text-center"
+          >
+            My
+            <span
+              class="text-5xl xs:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-glow font-playfair"
+              >Services</span
+            >
+          </h1>
+          <div class="flex flex-wrap lg:flex-nowrap gap-6 my-12">
+            <article
+              class="article-box bg-nav-sky p-4 rounded flex flex-col items-center text-center  dark:bg-slate-800"
+            >
+              <i class="fas fa-code text-5xl xs:text-5xl text-glow"></i>
+              <h2 class="text-4xl xs:text-4xl mt-4 font-bona">
+                Web Development
+              </h2>
+              <p class="my-4 text-justify font-grotesk">
+                I create custom websites that meet your specific needs,
+                combining great design and functionality. I build attractive and
+                efficient websites that are easy to use. Whether you need a new
+                website, additional features, or backend development, I ensure
+                everything works smoothly on all devices. My goal is to bring
+                your vision to life with creative and dependable web development
+                solutions that deliver results and provide an excellent user
+                experience.
+              </p>
+              <a href="https://trainings.internshala.com/s/v/3311415/1816c985" target="_blank">
+              <button
+                class="border-2 py-1 px-2 mx-auto xs:py-1 xs:px-2 md:py-2 md:px-6 rounded-full border-highlight font-bold transition-all duration-300 text-glow hover:text-sky hover:bg-glow"
+              >
+                Read More
+              </button>
+            </a>
+            </article>
+            <article
+              class="article-box bg-nav-sky p-4 rounded flex flex-col items-center text-center  dark:bg-slate-800"
+            >
+              <i class="fas fa-paint-brush text-5xl xs:text-5xl text-glow"></i>
+              <h2 class="text-4xl xs:text-4xl mt-4 font-bona">Web Design</h2>
+              <p class="my-4 text-justify font-grotesk">
+                I offer custom web design services to meet your unique needs. I
+                create visually appealing and highly functional websites that
+                engage visitors and deliver results. Whether you need a complete
+                redesign or a new design, I ensure a seamless and user-friendly
+                experience. My responsive designs look great and work well on
+                all devices. Trust me to bring your vision to life with
+                professional and innovative web design solutions.
+              </p>
+              <a href="https://trainings.internshala.com/s/v/3365489/e605c9ff" target="_blank">
+              <button
+                class="border-2 py-1 px-2 mx-auto xs:py-1 xs:px-2 md:py-2 md:px-6 rounded-full border-highlight font-bold transition-all duration-300 text-glow hover:text-sky hover:bg-glow"
+              >
+                Read More
+              </button>
+            </a>
+            </article>
+            <article
+              class="article-box bg-nav-sky p-4 rounded flex flex-col items-center text-center  dark:bg-slate-800"
+            >
+              <i class="fas fa-database text-5xl xs:text-5xl text-glow"></i>
+              <h2 class="text-4xl xs:text-4xl mt-4 font-bona">Database</h2>
+              <p class="my-4 text-justify font-grotesk">
+                I present custom database services to meet your exact needs.
+                With skills in database design, management, and optimization, I
+                keep your data organized, secure, and easy to access. Whether
+                you need database development, data migration, or performance
+                tuning, I provide solutions that improve efficiency and support
+                your business goals. I focus on creating strong and scalable
+                database systems that ensure reliable and high-performance data
+                management, making your operations smooth and effective.
+              </p>
+              <a href="https://trainings.internshala.com/s/v/3368407/4658b140" target="_blank">
+              <button
+                class="border-2 py-1 px-2 mx-auto xs:py-1 xs:px-2 md:py-2 md:px-6 rounded-full border-highlight font-bold transition-all duration-300 text-glow hover:text-sky hover:bg-glow"
+              >
+                Read More
+              </button>
+            </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!---------------------------- projects section ----------------------->
+
+      <section
+        id="projects"
+        class="flex flex-col gap-4 sm:flex-row bg-sky sm:min-h-screen px-4 sm:px-16 text-black  dark:bg-nav-blue dark:text-white"
+      >
+        <div class="py-16 xs:py-32 w-full my-auto">
+          <h1
+            class="text-4xl xs:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-playfair text-center"
+          >
+            Latest
+            <span
+              class="text-5xl xs:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-glow font-playfair"
+              >Projects</span
+            >
+          </h1>
+          <div class="flex flex-wrap justify-center gap-6 my-10">
+            <article class="project-img">
+              <img
+                src="./src/images/projects-img/p1.jpg"
+                style="width: 25rem" 
+                alt="about"
+              />
+              <div class="layer layer-a">
+                <div class="content">
+                  <h3
+                    class="text-white text-center text-xl xs:text-xl font-bona font-bold"
+                  >
+                  e-commerce website
+                  </h3>
+                  <div class="flex justify-center">
+                    <i
+                      class="fas fa-external-link-alt cursor-pointer text-2xl xs:text-xl my-2 font-bold transition-all duration-300 text-white hover:scale-130"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-img">
+              <img
+                src="./src/images/projects-img/p2.jpg"
+                style="width: 25rem"
+                alt="about"
+              />
+              <div class="layer layer-a">
+                <div class="content">
+                  <h3
+                    class="text-white text-center text-xl xs:text-xl font-bona font-bold"
+                  >
+                    Portfolio website
+                  </h3>
+                  <div class="flex justify-center">
+                    <i
+                      class="fas fa-external-link-alt cursor-pointer text-2xl xs:text-xl my-2 font-bold transition-all duration-300 text-white hover:scale-130"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-img">
+              <img
+                src="./src/images/projects-img/p3.jpg"
+                style="width: 25rem"
+                alt="about"
+              />
+              <div class="layer layer-a">
+                <div class="content">
+                  <h3
+                    class="text-white text-center text-xl xs:text-xl font-bona font-bold"
+                  >
+                    Stock Exchange
+                  </h3>
+                  <div class="flex justify-center">
+                    <i
+                      class="fas fa-external-link-alt cursor-pointer text-2xl xs:text-xl my-2 font-bold transition-all duration-300 text-white hover:scale-130"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-img">
+              <img
+                src="./src/images/projects-img/p4.jpg"
+                style="width: 25rem"
+                alt="about"
+              />
+              <div class="layer layer-a">
+                <div class="content">
+                  <h3
+                    class="text-white text-center text-xl xs:text-xl font-bona font-bold"
+                  >
+                    Neuralink
+                  </h3>
+                  <div class="flex justify-center">
+                    <i
+                      class="fas fa-external-link-alt cursor-pointer text-2xl xs:text-xl my-2 font-bold transition-all duration-300 text-white hover:scale-130"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-img">
+              <img
+                src="./src/images/projects-img/p5.jpg"
+                style="width: 25rem"
+                alt="about"
+              />
+              <div class="layer layer-a">
+                <div class="content">
+                  <h3
+                    class="text-white text-center text-xl xs:text-xl font-bona font-bold"
+                  >
+                    satellite
+                  </h3>
+                  <div class="flex justify-center">
+                    <i
+                      class="fas fa-external-link-alt cursor-pointer text-2xl xs:text-xl my-2 font-bold transition-all duration-300 text-white hover:scale-130"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-img">
+              <img
+                src="./src/images/projects-img/p6.jpg"
+                style="width: 25rem"
+                alt="about"
+              />
+              <div class="layer layer-a">
+                <div class="content">
+                  <h3
+                    class="text-white text-center text-xl xs:text-xl font-bona font-bold"
+                  >
+                    Humanoid Robot
+                  </h3>
+                  <div class="flex justify-center">
+                    <i
+                      class="fas fa-external-link-alt cursor-pointer text-2xl xs:text-xl my-2 font-bold transition-all duration-300 text-white hover:scale-130"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!------------------ contact section ----------------------->
+
+      <section
+        id="contact"
+        class="flex flex-col gap-4 sm:flex-row bg-sky sm:min-h-screen pb-[10%] px-4 sm:px-16 text-black  dark:bg-nav-blue dark:text-white"
+      >
+        <div class="py-16 xs:py-32 w-full my-auto">
+          <h1 class="text-center">
+            <span
+              class="text-5xl xs:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-glow font-playfair"
+              >Contact
+            </span>
+            <span
+              class="text-4xl xs:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-playfair"
+              >Me</span
+            >
+          </h1>
+          <form action="" class="my-8 flex flex-col sm:gap-2">
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+              <div class="flex flex-col sm:w-[50%]">
+                <label for="first-name" class="text-sm sm:text-base mb-1"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  class="py-2 px-4 sm:py-4 sm:px-6 bg-slate-500 outline-none"
+                  required
+                />
+              </div>
+              <div class="flex flex-col sm:w-[50%]">
+                <label for="last-name" class="text-sm sm:text-base mb-1"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  class="py-2 px-4 sm:py-4 sm:px-6 bg-slate-500 outline-none"
+                  required
+                />
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 sm:gap-6 sm:flex-row py-4">
+              <div class="flex flex-col sm:w-[50%]">
+                <label for="email" class="text-sm sm:text-base mb-1"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="py-2 px-4 sm:py-4 sm:px-6 bg-slate-500 outline-none"
+                  required
+                />
+              </div>
+              <div class="flex flex-col sm:w-[50%]">
+                <label for="mobile-number" class="text-sm sm:text-base mb-1"
+                  >Mobile Number</label
+                >
+                <input
+                  type="number"
+                  id="mobile-number"
+                  name="mobile-number"
+                  class="py-2 px-4 sm:py-4 sm:px-6 bg-slate-500 outline-none"
+                  required
+                />
+              </div>
+            </div>
+            <div class="flex flex-col w-[100%]">
+              <label for="message" class="text-sm sm:text-base mb-1"
+                >Message</label
+              >
+              <textarea
+                name="message"
+                id="message"
+                rows="6"
+                class="py-2 px-4 sm:py-4 sm:px-6 bg-slate-500 outline-none"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="mx-auto border-2 mt-4 py-1 px-2 xs:py-1 xs:px-2 md:py-2 md:px-6 rounded-full border-glow font-bold transition-all duration-300 text-glow hover:text-sky hover:bg-glow"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!------------------------- Footer -------------------------->
+
+    <footer class="footer bg-sky " >
+      <div>
+        <div class="stream" id="stream1"></div>
+        <div class="stream" id="stream2"></div>
+        <div class="stream" id="stream3"></div>
+        <div class="stream" id="stream4"></div>
+      </div>
+      <ul class="social-icon">
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/akash-kumar-1119671a0/"
+            target="_blank"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://github.com/AkashKumar3" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="mailto:sanuverma3212@gmail.com.com"
+            target="_blank"
+          >
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.instagram.com"
+            target="_blank"
+          >
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="tel:+91 9999999999">
+            <ion-icon name="call-outline"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="f-nav">
+        <li class="f-item">
+          <a class="f-link font-playfair" href="#home">Home</a>
+        </li>
+        <li class="f-item">
+          <a class="f-link font-playfair" href="#about">About</a>
+        </li>
+        <li class="f-item">
+          <a class="f-link font-playfair" href="#skills">Skills</a>
+        </li>
+        <li class="f-item">
+          <a class="f-link font-playfair" href="#services">Services</a>
+        </li>
+        <li class="f-item">
+          <a class="f-link font-playfair" href="#projects">Projects</a>
+        </li>
+        <li class="f-item">
+          <a class="f-link font-playfair" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <p class="font-caudex font-bold">
+        Akash Kumar &copy; All Rights Reserved - 2024
+      </p>
+    </footer>
+    <script src="https://kit.fontawesome.com/6c0afbe74a.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navItem = document.getElementById("navItem");
+      const darktheme = document.getElementById("darktheme");
+
+      hamburger.addEventListener("click", () => {
+        navItem.classList.toggle("hidden");
+        darktheme.classList.toggle("hidden");
+      });
+
+      const toggleSwitch = document.getElementById("t-btn");
+
+      toggleSwitch.addEventListener("change", function () {
+        if (this.checked) {
+          document.body.classList.remove("dark");
+        } else {
+          document.body.classList.add("dark");
+        }
+      });
+    </script>
+  </body>
+</html>
